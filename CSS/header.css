@@ -12,7 +12,9 @@ header {
     margin-inline: auto;
     padding: 1rem 2rem;
     z-index: 1000;
-    display: grid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     border-radius: 0 0 var(--header-corner) var(--header-corner);
     -webkit-border-radius: 0 0 var(--header-corner) var(--header-corner);
     -moz-border-radius: 0 0 var(--header-corner) var(--header-corner);
@@ -31,4 +33,17 @@ nav ul {
     align-items: center;
     gap: 2rem;
     list-style: none;
+}
+.header-icons {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+.header-icons ul.social {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+.theme-toggle {
+    cursor: pointer;
 }

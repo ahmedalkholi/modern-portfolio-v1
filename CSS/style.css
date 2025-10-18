@@ -45,13 +45,18 @@ body {
     background-color: var(--bg-clr);
     position: relative;
     min-height: calc(100vh);
+    transition: all .1s ease;
+    -webkit-transition: all .1s ease;
+    -moz-transition: all .1s ease;
+    -ms-transition: all .1s ease;
+    -o-transition: all .1s ease;
 }
-body.light {
+html.light {
     /* Light Mood */
     --bg-clr: #FBFBFB;
 
     --header-clr: rgba(255, 255, 255, .4);
-    --header-strock-clr: rgba(255, 255, 255, .25);
+    --header-strok-clr: rgba(255, 255, 255, .25);
     
     --main-text-clr: var(--onyx-clr);
     --link-clr: #404040;

@@ -3,20 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A modern multi-page responsive portfolio with light and dark mode, built using HTML, CSS, and JavaScript.">
     <title>UI Components</title>
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/header.css">
     <link rel="stylesheet" href="CSS/main.css">
+    <script>
+        (function() {
+            const THEME_KEY = 'site-theme';
+            let savedTheme = localStorage.getItem(THEME_KEY)
+            if (savedTheme === 'true'){
+                document.documentElement.classList.add('light');
+            }
+        })();
+    </script>
 </head>
-<body class="">
+<body>
     <div class="background-glow">
         <div class="background_top"></div>
         <div class="background_bottom"></div>
     </div>
     <header>
         <nav>
-            <div class="logo">
-                <img src="Images/icons/Property 1=white small.svg" alt="Logo Icon">
+            <div class="logo-container">
+                <img id="logo" src="Images/icons/Property 1=white small.svg" alt="Logo Icon">
             </div>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -26,6 +36,23 @@
                 <li>More</li>
             </ul>
         </nav>
+        <div class="header-icons">
+            <ul class="social">
+                <li>
+                    <a href="#">
+                        <img id="github" src="./Images/icons/Github.png" alt="Github Icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img id="linkedin" src="./Images/icons/LinkedIn.png" alt="Linkedin Icon">
+                    </a>
+                </li>
+            </ul>
+            <div class="theme-toggle">
+                <img id="sun" src="./Images/icons/Sun.png" alt="">
+            </div>
+        </div>
     </header>
     
 </body>
