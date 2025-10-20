@@ -14,6 +14,10 @@
             let savedTheme = localStorage.getItem(THEME_KEY)
             if (savedTheme === 'true'){
                 document.documentElement.classList.add('light');
+                sunIcon.src = icons.light.Sun;
+                githubIcon.src = icons.light.Github;
+                linkedinIcon.src = icons.light.Linkedin;
+                logoIcon.src = icons.light.Logo;
             }
         })();
     </script>
