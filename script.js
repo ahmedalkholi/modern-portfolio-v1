@@ -11,7 +11,7 @@ const icons = {
     light: {
         Sun: "./Images/icons/Sun.svg",
         Github: "./Images/icons/Github.svg",
-        Linkedin: "./Images/icons/linkedin.svg",
+        Linkedin: "./Images/icons/Linkedin.svg",
         Logo: "./Images/icons/Size=Small, Mode=Dark.svg",
     },
     dark: {
