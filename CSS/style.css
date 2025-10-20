@@ -34,6 +34,12 @@
 
     /* padding */
     --btn-padding: 16px 32px;
+
+    /* Icons */
+        --Sun: url("../Images/icons/Sun.png");
+        --Github: url("../Images/icons/Github.png");
+        --Linkedin: url("../Images/icons/Linkedin.png");
+        --Logo: url("../Images/icons/Property 1=white small.svg");
 }
 h1,h2,h3,h4,h5,h6 {
     color: var(--main-text-clr);
@@ -75,7 +81,13 @@ html.light {
     --strok-clr: #EBEBEB;
     
     --btn-accent-clr: #F3F3F3;
-    --accentbtn-text-clr: var(--onyx-clr)
+    --accentbtn-text-clr: var(--onyx-clr);
+
+    /* Icons */
+    --Sun: url("../Images/icons/Sun.svg");
+    --Github: url("../Images/icons/Github.svg");
+    --Linkedin: url("../Images/icons/LinkedIn.svg");
+    --Logo: url("../Images/icons/Size=Small, Mode=Dark.svg");
 }
 .background-glow {
     position: fixed;
@@ -129,4 +141,36 @@ a {
     -ms-border-radius: var(--btn-corner);
     -o-border-radius: var(--btn-corner);
     box-shadow: 0 -1px 2px var(--strok-clr);
+}
+div#logo {
+    width: 35px;
+    height: 35px;
+    background-image: var(--Logo);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+div#github {
+    width: 25px;
+    height: 25px;
+    background-image: var(--Github);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+div#linkedin {
+    width: 25px;
+    height: 25px;
+    background-image: var(--Linkedin);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+div#sun {
+    width: 25px;
+    height: 25px;
+    background-image: var(--Sun);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }

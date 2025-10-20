@@ -14,10 +14,6 @@
             let savedTheme = localStorage.getItem(THEME_KEY)
             if (savedTheme === 'true'){
                 document.documentElement.classList.add('light');
-                sunIcon.src = icons.light.Sun;
-                githubIcon.src = icons.light.Github;
-                linkedinIcon.src = icons.light.Linkedin;
-                logoIcon.src = icons.light.Logo;
             }
         })();
     </script>
@@ -30,7 +26,7 @@
     <header>
         <nav>
             <div class="logo-container">
-                <img id="logo" src="Images/icons/Property 1=white small.svg" alt="Logo Icon">
+                <div id="logo"></div>
             </div>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -44,17 +40,17 @@
             <ul class="social">
                 <li>
                     <a href="#">
-                        <img id="github" src="./Images/icons/Github.png" alt="Github Icon">
+                        <div id="github"></div>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img id="linkedin" src="/Images/icons/Linkedin.png" alt="Linkedin Icon">
+                        <div id="linkedin"></div>
                     </a>
                 </li>
             </ul>
             <div class="theme-toggle">
-                <img id="sun" src="./Images/icons/Sun.png" alt="">
+                <div id="sun"></div>
             </div>
         </div>
     </header>
