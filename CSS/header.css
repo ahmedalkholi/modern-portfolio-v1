@@ -4,7 +4,7 @@ header {
     backdrop-filter: blur(40px);
     color: var(--dark-gray);
     height: var(--header-height);
-    width: 95%;
+    width: 90%;
     position: fixed;
     top: 0;
     left: 0;

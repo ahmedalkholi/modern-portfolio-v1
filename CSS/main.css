@@ -1,3 +1,22 @@
 main {
-    padding-top: calc(var(--header-height) + 1rem);
+    padding-block: calc(var(--header-height) + 3rem);
+    padding-inline: clamp(1rem, 7vw, 9rem);
+    display: grid;
+    gap: 2rem;
+}
+html:not(.light) main .custom-head {
+    color: var(--p-clr);
+}
+main p {
+    max-width: 500px;
+}
+main .main_btns-container {
+    display: flex;
+    gap: 1rem;
+}
+.sec-btn {
+    background-color: var(--btn-accent-clr) !important;
+    color: var(--accentbtn-text-clr);
+    background: none;
+    box-shadow: 0 0;
 }
