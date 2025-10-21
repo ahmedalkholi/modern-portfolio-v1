@@ -7,16 +7,34 @@ main {
 html:not(.light) main .custom-head {
     color: var(--p-clr);
 }
+main h1 {
+    font-size: clamp(2rem, 5vw, 4rem);
+}
 main p {
+    width: 100%;
     max-width: 500px;
+    line-height: 1.7rem;
 }
 main .main_btns-container {
     display: flex;
+    flex-direction: column;
     gap: 1rem;
+}
+main .main_btns-container .btn {
+    flex-grow: 1;
+    min-width: fit-content;
 }
 .sec-btn {
     background-color: var(--btn-accent-clr) !important;
     color: var(--accentbtn-text-clr);
     background: none;
     box-shadow: 0 0;
+}
+@media(min-width: 768px) {
+    main .main_btns-container {
+        flex-direction: row;
+    }
+    main .main_btns-container .btn {
+        flex-grow: 0;
+    }
 }
