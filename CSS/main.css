@@ -7,6 +7,9 @@ main {
 html:not(.light) main .custom-head {
     color: var(--p-clr);
 }
+main {
+    position: relative;
+}
 main h1 {
     font-size: clamp(2rem, 5vw, 4rem);
 }

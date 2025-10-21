@@ -1,12 +1,12 @@
 :root {
     --header-height: 60px;
-
+    
     /* Dark Mood */
     --bg-clr: #0D0D0D;
-
+    
     --header-clr: rgba(24, 24, 29, .45);
     --header-strok-clr: rgba(94, 94, 94, .38);
-
+    
     --main-text-clr: #FFF;
     /* paragraphs */
     --p-clr: #808080;
@@ -17,13 +17,21 @@
     
     --card-clr: var(--onyx-clr);
     --strok-clr: #383737;
-
+    
     --btn-accent-clr: var(--onyx-clr);
     --accentbtn-text-clr: var(--p-clr);
-
+    
     /* Dark Gradient */
     --gradient-clr1: #1A1A1A; 
     --gradient-clr2: #131313; 
+    
+
+    --shape-gradient1: rgb(48, 47, 47);
+    --shape-gradient2: rgba(13, 13, 13, 100%);
+
+    --first-shape: #282727;
+    --second-shape: #232323;
+    --last-shape: #1C1B1B;
 
     --onyx-clr: #181818;
 
@@ -35,11 +43,12 @@
     /* padding */
     --btn-padding: 16px 32px;
 
+    
     /* Icons */
-        --Sun: url("../Images/icons/Sun.png");
-        --Github: url("../Images/icons/Github.png");
-        --Linkedin: url("../Images/icons/Linkedin.png");
-        --Logo: url("../Images/icons/Property 1=white small.svg");
+    --Sun: url("../Images/icons/Sun.png");
+    --Github: url("../Images/icons/Github.png");
+    --Linkedin: url("../Images/icons/Linkedin.png");
+    --Logo: url("../Images/icons/Property 1=white small.svg");
 }
 h1,h2,h3,h4,h5,h6 {
     color: var(--main-text-clr);
@@ -71,19 +80,26 @@ body {
 html.light {
     /* Light Mood */
     --bg-clr: #FBFBFB;
-
+    
     --header-clr: rgba(255, 255, 255, .4);
     --header-strok-clr: rgba(255, 255, 255, .25);
     
     --main-text-clr: var(--onyx-clr);
     --link-clr: #404040;
-
+    
     --card-clr: #F6F6F6;
     --strok-clr: #EBEBEB;
     
     --btn-accent-clr: #F3F3F3;
     --accentbtn-text-clr: var(--onyx-clr);
+    
+    --shape-gradient1: rgb(187, 181, 181);
+    --shape-gradient2: rgba(251, 251, 251, 100%);
 
+    --first-shape: #f6f6f6;
+    --second-shape: #e4e4e4;
+    --last-shape: #d5cfcf;
+    
     /* Icons */
     --Sun: url("../Images/icons/Sun.svg");
     --Github: url("../Images/icons/Github.svg");
@@ -174,4 +190,53 @@ div#sun {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+}
+.shape-container {
+    position: absolute;
+    right: 30%;
+    top: 30%;
+    z-index: -10;
+}
+.shape {
+    position: relative;
+    width: 200px;
+    height: 250px;
+
+    background: linear-gradient(45deg, var(--shape-gradient2) 10%, var(--shape-gradient1) 100%);
+
+    border-radius: 100px 100px 0 0;
+    -webkit-border-radius: 100px 100px 0 0;
+    -moz-border-radius: 100px 100px 0 0;
+    -ms-border-radius: 100px 100px 0 0;
+    -o-border-radius: 100px 100px 0 0;
+}
+.shape-detail {
+    position: absolute;
+    bottom: -7px;
+    width: calc(200px / 3);
+    background-color: #E0DDDD;
+    height: 20px;
+    border-radius: 50% ;
+    -webkit-border-radius: 50% ;
+    -moz-border-radius: 50% ;
+    -ms-border-radius: 50% ;
+    -o-border-radius: 50% ;
+    z-index: -1;
+}
+.shape-detail:first-child {
+    background: linear-gradient( 45deg, var(--first-shape) 50%, var(--second-shape) 100%);
+}
+.shape-detail:nth-child(2) {
+    left: calc(200px / 3);
+    background: linear-gradient( 45deg, var(--second-shape) 20%,var(--last-shape) 50%, var(--last-shape) 100%);
+    /* background-color: var(--second-shape); */
+}
+.shape-detail:last-child {
+    right: 0;
+    background-color: var(--last-shape);
+}
+@media(max-width: 877px) {
+    .shape-container {
+        display: none;
+    }
 }
