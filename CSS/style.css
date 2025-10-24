@@ -26,8 +26,8 @@
     --gradient-clr2: #131313; 
     
 
-    --shape-gradient1: rgb(48, 47, 47);
-    --shape-gradient2: rgba(13, 13, 13, 100%);
+    --shape-gradient1: rgba(13, 13, 13, 100%);
+    --shape-gradient2: rgb(48, 47, 47);
 
     --first-shape: #282727;
     --second-shape: #232323;
@@ -59,15 +59,15 @@ p {
 li {
     color: var(--link-clr);
 }
-*,
+* :not(i),
 *::before,
 *::after {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
 }
 body {
+    font-family: Arial, Helvetica, sans-serif;
     background-color: var(--bg-clr);
     position: relative;
     min-height: calc(100vh);

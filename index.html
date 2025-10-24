@@ -5,9 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A modern multi-page responsive portfolio with light and dark mode, built using HTML, CSS, and JavaScript.">
     <title>UI Components</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/header.css">
     <link rel="stylesheet" href="CSS/main.css">
+
     <script>
         (function() {
             const THEME_KEY = 'site-theme';
@@ -23,17 +27,60 @@
         <div class="background_top"></div>
         <div class="background_bottom"></div>
     </div>
+    <div class="logo-container-phone">
+        <div id="logo"></div>
+    </div>
     <header>
         <nav>
             <div class="logo-container">
                 <div id="logo"></div>
             </div>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#notebook">Notebook</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li>More</li>
+            <ul class="nav-text-container">
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#work">Work</a>
+                </li>
+                <li>
+                    <a href="#notebook">Notebook</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+                <li class="more">
+                    More
+                </li>
+            </ul>
+            <ul class="nav-icon-container">
+                <li>
+                    <a href="#home">
+                        <i class="ri-home-3-line"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#aboutme">
+                        <i class="ri-user-line"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#work">
+                        <i class="ri-suitcase-line"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#notebook">
+                        <i class="ri-pencil-line"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact">
+                        <i class="ri-mail-line"></i>
+                    </a>
+                </li>
+                <li class="more">
+                    <i class="ri-menu-3-line"></i>
+                </li>
             </ul>
         </nav>
         <div class="header-icons">
