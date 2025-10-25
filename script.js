@@ -1,17 +1,8 @@
 const htmlEle = document.documentElement;
 const themeToggle = document.querySelector('.theme-toggle');
-const sunIcon = document.getElementById("sun");
-const githubIcon = document.getElementById("github");
-const linkedinIcon = document.getElementById("linkedin");
-const logoIcon = document.getElementById("logo")
 
 const THEME_KEY = 'site-theme';
 
-let savedTheme = localStorage.getItem(THEME_KEY)
-
-if (savedTheme === 'true'){
-    htmlEle.classList.add('light');
-}
 
 themeToggle.addEventListener('click', () =>
 {
@@ -56,23 +47,13 @@ links.forEach(link =>
 {
     const icon = link.querySelector('i')
     icon.className = icon.className.replace('-fill', '-line')
-    if (currentPath.includes(link.getAttribute('href')))
-    {
-        icon.className = icon.className.replace('-line', '-fill')
-    }
-})
-
-
-links.forEach(link =>
-{
-    if (location.hash === link.getAttribute('href'))
+    if (currentPath.includes(link.getAttribute('href')) || location.hash === link.getAttribute('href'))
     {
         setFill(link)
     }
 })
 
 // Add pop up more
-
 const moreLinks = document.querySelectorAll('.more')
 const moreSlide = document.querySelector('.more-slide')
 
