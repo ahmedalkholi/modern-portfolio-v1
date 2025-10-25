@@ -70,3 +70,24 @@ links.forEach(link =>
         setFill(link)
     }
 })
+
+// Add pop up more
+
+const moreLinks = document.querySelectorAll('.more')
+const moreSlide = document.querySelector('.more-slide')
+
+moreLinks.forEach(link =>
+{
+    link.addEventListener('click', () =>
+    {
+        moreSlide.classList.toggle('active')
+    })
+})
+
+window.addEventListener('click', (e) =>
+{
+    if (!e.target.closest('.more') && !e.target.closest('.more-slide'))
+    {
+        moreSlide.classList.remove('active');
+    }
+})
