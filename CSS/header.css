@@ -1,13 +1,21 @@
 .more-slide {
     position: absolute;
-    top: var(--header-height);
-    left: 30%;
+    top: 100%;
+    right: 0;
     background-color: var(--header-clr);
     padding: 1rem 3rem;
-    display: none;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height .3s ease-in-out, opacity .3s ease-in-out .1s;
+    -webkit-transition: max-height .3s ease-in-out, opacity .3s ease-in-out .1s;
+    -moz-transition: max-height .3s ease-in-out, opacity .3s ease-in-out .1s;
+    -ms-transition: max-height .3s ease-in-out, opacity .3s ease-in-out .1s;
+    -o-transition: max-height .3s ease-in-out, opacity .3s ease-in-out .1s;
 }
 .more-slide.active {
-    display: block;
+    max-height: 500px;
+    opacity: 1;
     z-index: 10000;
 }
 .more:hover {
@@ -50,6 +58,8 @@ nav {
     display: flex;
     align-items: center;
     gap: 3rem;
+    position: relative;
+    height: var(--header-height);
 }
 nav ul {
     color: var(--link-clr);
@@ -128,8 +138,8 @@ nav ul {
     }
     .more-slide {
         top: unset;
-        bottom: calc(var(--header-height) + 2.7rem);
-        left: 70%;
-        width: fit-content
+        bottom: 100%;
+        left: unset;
+        right: 0;
     }
 }
