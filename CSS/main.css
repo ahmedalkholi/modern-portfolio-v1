@@ -4,7 +4,7 @@ main {
     display: grid;
     gap: 2rem;
 }
-html:not(.light) main .custom-head {
+html:not(.light) main .main__head-highlight {
     color: var(--p-clr);
 }
 main {
@@ -18,26 +18,26 @@ main p {
     max-width: 500px;
     line-height: 1.7rem;
 }
-main .main_btns-container {
+main .main-btns__container {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
-main .main_btns-container .btn {
+main .main-btns__container .btn {
     flex-grow: 1;
     min-width: fit-content;
 }
-.sec-btn {
+.btn--secondary {
     background-color: var(--btn-accent-clr) !important;
     color: var(--accentbtn-text-clr);
     background: none;
     box-shadow: 0 0;
 }
 @media(min-width: 768px) {
-    main .main_btns-container {
+    main .main-btns__container {
         flex-direction: row;
     }
-    main .main_btns-container .btn {
+    main .main-btns__container .btn {
         flex-grow: 0;
     }
 }

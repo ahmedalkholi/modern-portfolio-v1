@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A modern multi-page responsive portfolio with light and dark mode, built using HTML, CSS, and JavaScript.">
+    <meta name="author" content="Ahmed AlKholi">
     <title>UI Components</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="icon" href="./Images/icons/Size=Small, Mode=dark.svg">
+
+    <link rel="stylesheet" href="./fonts/remixicon.css">
 
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/header.css">
     <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/selected-work.css">
+    <link rel="stylesheet" href="CSS/about.css">
 
     <script>
         (function() {
@@ -24,8 +29,8 @@
 </head>
 <body>
     <div class="background-glow">
-        <div class="background_top"></div>
-        <div class="background_bottom"></div>
+        <div class="background-glow__top"></div>
+        <div class="background-glow__bottom"></div>
     </div>
     <div class="logo-container-phone">
         <div class="logo"></div>
@@ -35,7 +40,7 @@
             <div class="logo-container">
                 <div class="logo"></div>
             </div>
-            <ul class="nav-text-container">
+            <ul class="header-nav__text">
                 <li>
                     <a href="#home">Home</a>
                 </li>
@@ -48,12 +53,12 @@
                 <li>
                     <a href="#contact">Contact</a>
                 </li>
-                <li class="more">
+                <li class="header-nav__itme--more">
                     More
                     <i class="ri-arrow-down-s-line"></i>
                 </li>
             </ul>
-            <ul class="nav-icon-container">
+            <ul class="header-nav__icon">
                 <li>
                     <a href="#home">
                         <i class="ri-home-3-line"></i>
@@ -79,7 +84,7 @@
                         <i class="ri-mail-line"></i>
                     </a>
                 </li>
-                <li class="more">
+                <li class="header-nav__itme--more">
                     <i class="ri-menu-3-line"></i>
                 </li>
             </ul>
@@ -98,7 +103,7 @@
             </div>
         </nav>
         <div class="header-icons">
-            <ul class="social">
+            <ul class="header-icons__social">
                 <li>
                     <a href="#">
                         <div id="github"></div>
@@ -117,22 +122,140 @@
     </header>
     
     <main>
-        <h1><span class="custom-head">I'm</span> Eihab Khan</h1>
+        <h1><span class="main__head-highlight">I'm</span> Eihab Khan</h1>
         <p>
             A front-end engineer and UI/UX designer helping startups turn their visions into a digital reality. I specialize in designing and building modern mobile and web-based apps.
         </p>
-        <div class="main_btns-container">
+        <div class="main-btns__container">
             <button class="btn">See my resume</button>
-            <button class="sec-btn btn">Get in touch</button>
+            <button class="btn btn--secondary">Get in touch</button>
         </div>
         <div class="shape-container">
             <div class="shape">
-                <div class="shape-detail"></div>
-                <div class="shape-detail"></div>
-                <div class="shape-detail"></div>
+                <div class="shape__detail"></div>
+                <div class="shape__detail"></div>
+                <div class="shape__detail"></div>
             </div>
         </div>
     </main>
+    <section class="selected-work">
+        <h1 class="heading-primary">Selected Work</h1>
+        <section class="card-primary">
+            <div class="card-primary__content">
+                <div class="card-content__logo">
+                    <img src="./Images/Subbi.png" alt="Subbi Logo">
+                </div>
+                <h2>
+                    Subbi –– The free subscriptions manager
+                </h2>
+                <p>
+                    Subbi is a side project that I’ve built to help me keep track of how much I spend on subscriptions and also to prevent the “accidental” bill after a 14-day trail ends. It helps you keep track of bills like Netflix, Spotify, Xbox Game Pass, Bus Card, Bank Cards, and many more.
+                </p>
+                <div class="card-content__link">
+                    <a href="" class="section-content__link">
+                    Download App
+                    </a>
+                    <img src="./Images/icons/Arrow Right.svg" alt="Arrow right icon">
+                </div>
+            </div>
+            <div class="card-primary__img">
+                <img src="./Images/screenshot/Subbi.png" alt="Screenshot for the Subbi app">
+            </div>
+        </section>
+        <section class="card-primary">
+            <div class="card-primary__content">
+                <div class="card-content__logo">
+                    <img src="./Images/React Docs.png" alt="React Logo">
+                </div>
+                <h2>
+                    React Documentation
+                </h2>
+                <p>
+                    With the release of the new React website on March 16, there was a need for localization to make the documentation accessible to Arabic-speaking developers. I contributed to translating several documentation, worked with great developers, Improved my ability to write better PR requests, and as a side effect, I now know more about the Arabic grammar.
+                </p>
+                <div class="card-content__link">
+                    <a href="" class="section-content__link">
+                        Visit Site
+                    </a>
+                    <img src="./Images/icons/Arrow Right.svg" alt="Arrow right icon">
+                </div>
+            </div>
+            <div class="card-primary__img">
+                <img src="./Images/screenshot/React Docs.png" alt="Screenshot for the Subbi app">
+            </div>
+        </section>
+        <section class="card-primary">
+            <div class="card-primary__content">
+                <div class="card-content__logo">
+                    <img src="./Images/Storybook Docs.png" alt="Subbi Logo">
+                </div>
+                <h2>
+                    Storybook Documentation
+                </h2>
+                <p>
+                    This was my very first OSS contribution, I contributed to translating the documentation of Storybook into Arabic, enabling a wider audience to access and understand the resources available. I gained valuable experience in working effectively with teams and navigating the pull request process.
+                </p>
+                <div class="card-content__link">
+                    <a href="" class="section-content__link">
+                        Visit Site
+                    </a>
+                    <img src="./Images/icons/Arrow Right.svg" alt="Arrow right icon">
+                </div>
+            </div>
+            <div class="card-primary__img">
+                <img src="./Images/screenshot/Storybook Docs.png" alt="Screenshot for the Subbi app">
+            </div>
+        </section>
+    </section>
+    <section class="aboutme">
+        <h1 class="heading-primary">Get to know me</h1>
+        <div class="about-container">
+            <section class="card-primary about-card">
+                <h2>
+                    About Me
+                </h2>
+                <p>
+                    Who I am and what I do
+                </p>
+                <div class="card-content__logo">
+                    <img src="./Images/About me.png" alt="Subbi Logo">
+                </div>
+            </section>
+            <section class="card-primary about-card">
+                <h2>
+                    Note Book
+                </h2>
+                <p>
+                    My thoughts, insights, and reflections
+                </p>
+                <div class="card-content__logo">
+                    <img src="./Images/Notebook.png" alt="Subbi Logo">
+                </div>
+            </section>
+            <section class="card-primary about-card">
+                <h2>
+                    Book Shelf
+                </h2>
+                <p>
+                    Books and pieces of wisdom I’ve enjoyed reading
+                </p>
+                <div class="card-content__logo">
+                    <img src="./Images/Bookshelf.png" alt="Subbi Logo">
+                </div>
+            </section>
+            <section class="card-primary about-card">
+                <h2>
+                    Teck Stack
+                </h2>
+                <p>
+                    The dev tools, apps, devices, and games I use and play.
+                </p>
+                <div class="card-content__logo">
+                    <img src="./Images/Tech Stack.png" alt="Subbi Logo">
+                </div>
+            </section>
+        </div>
+    </section>
 </body>
 
 <script src="script.js"></script>

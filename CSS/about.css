@@ -1,0 +1,21 @@
+.about-container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 1rem;
+    justify-content: center;
+}
+.aboutme .about-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 400px;
+}
+.aboutme .about-card .card-content__logo {
+    width: 100%;
+    height: auto;
+}
+@media(max-width: 768px) {
+    .about-container {
+        grid-template-columns: 1fr;
+    }
+}
