@@ -69,6 +69,10 @@ nav ul {
     gap: 2rem;
     list-style: none;
 }
+nav ul li {
+    cursor: pointer;
+    user-select: none;
+}
 .header-nav__icon {
     display: none;
 }

@@ -13,7 +13,7 @@ themeToggle.addEventListener('click', () =>
 
 // Start active link effects
 
-const links = document.querySelectorAll('.nav-icon-container a')
+const links = document.querySelectorAll('.header-nav__icon a')
 const currentPath = window.location.pathname
 
 
@@ -54,7 +54,7 @@ links.forEach(link =>
 })
 
 // Add pop up more
-const moreLinks = document.querySelectorAll('.more')
+const moreLinks = document.querySelectorAll('.header-nav__itme--more')
 const moreSlide = document.querySelector('.more-slide')
 
 moreLinks.forEach(link =>
@@ -67,7 +67,7 @@ moreLinks.forEach(link =>
 
 window.addEventListener('click', (e) =>
 {
-    if (!e.target.closest('.more') && !e.target.closest('.more-slide'))
+    if (!e.target.closest('.header-nav__itme--more') && !e.target.closest('.more-slide'))
     {
         moreSlide.classList.remove('active');
     }
