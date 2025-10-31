@@ -2,13 +2,14 @@
     display: grid;
     grid-template-columns: repeat(2, auto);
     gap: 1rem;
-    justify-content: center;
+    margin-top: 3rem;
 }
 .aboutme .about-card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     max-width: 400px;
+    margin: auto;
 }
 .aboutme .about-card .card-content__logo {
     width: 100%;
@@ -17,5 +18,6 @@
 @media(max-width: 768px) {
     .about-container {
         grid-template-columns: 1fr;
+        justify-content: center;
     }
 }
