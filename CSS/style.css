@@ -5,7 +5,7 @@
     --bg-clr: #0D0D0D;
     
     --header-clr: rgba(24, 24, 29, .45);
-    --header-strok-clr: rgba(94, 94, 94, .38);
+    --header-strok-clr: rgba(255, 255, 255, .1);
     
     --main-text-clr: #FFF;
     /* paragraphs */
@@ -49,6 +49,7 @@
     --Github: url("../Images/icons/Github.png");
     --Linkedin: url("../Images/icons/Linkedin.png");
     --Logo: url("../Images/icons/Property 1=white small.svg");
+    --footer-logo: url("../Images/icons/Property\ 1=white\ large.svg");
 }
 h1,h2,h3,h4,h5,h6 {
     color: var(--main-text-clr);
@@ -105,6 +106,7 @@ html.light {
     --Github: url("../Images/icons/Github.svg");
     --Linkedin: url("../Images/icons/LinkedIn.svg");
     --Logo: url("../Images/icons/Size=Small, Mode=Dark.svg");
+    --footer-logo: url("../Images/icons/Size=Large\,\ Mode=Dark.svg");
 }
 .background-glow {
     position: fixed;
@@ -144,6 +146,10 @@ html.light {
 a {
     text-decoration: none;
     color: inherit;
+}
+img {
+    max-width: 100%;
+    height: auto;
 }
 .btn {
     cursor: pointer;
@@ -240,6 +246,6 @@ div#sun {
         display: none;
     }
 }
-body > section {
+body > section, footer {
     padding-inline: clamp(1rem, 7vw, 9rem);
 }
