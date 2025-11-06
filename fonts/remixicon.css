@@ -10,14 +10,15 @@
 */
 @font-face {
   font-family: "remixicon";
-  src: url('remixicon.eot?t=1760071648894'); /* IE9*/
-  src: url('remixicon.eot?t=1760071648894#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url("remixicon.woff2?t=1760071648894") format("woff2"),
-  url("remixicon.woff?t=1760071648894") format("woff"),
-  url('remixicon.ttf?t=1760071648894') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('remixicon.svg?t=1760071648894#remixicon') format('svg'); /* iOS 4.1- */
+  src: url("/fonts/remixicon.woff2?t=1760071648894") format("woff2"),
+      url("/fonts/remixicon.woff?t=1760071648894") format("woff"),
+      url("/fonts/remixicon.ttf?t=1760071648894") format("truetype"),
+      url("/fonts/remixicon.svg?t=1760071648894#remixicon") format("svg");
+  font-weight: normal;
+  font-style: normal;
   font-display: swap;
 }
+
 
 [class^="ri-"], [class*=" ri-"] {
   font-family: 'remixicon' !important;
