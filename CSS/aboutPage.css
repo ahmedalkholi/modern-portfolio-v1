@@ -1,0 +1,4 @@
+.main__head {
+    border-bottom: 1px solid var(--accentbtn-text-clr);
+    padding-bottom: 3rem;
+}
