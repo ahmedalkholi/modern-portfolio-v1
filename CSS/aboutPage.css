@@ -1,4 +1,10 @@
 .main__head {
-    border-bottom: 1px solid var(--accentbtn-text-clr);
+    border-bottom: 1px solid var(--header-strok-clr);
     padding-bottom: 3rem;
+}
+main .main-section:last-child {
+    margin-top: 5rem;
+}
+main .main-section:last-child img {
+    margin-top: 3rem;
 }
