@@ -1,3 +1,6 @@
+main {
+    padding-block: 7rem;
+}
 .main__head {
     border-bottom: 1px solid var(--header-strok-clr);
     padding-bottom: 3rem;

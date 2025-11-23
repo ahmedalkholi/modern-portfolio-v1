@@ -1,0 +1,24 @@
+.project {
+    padding-block: 7rem;
+}
+.project-contact {
+    background-color: var(--header-clr);
+    border: 3px dashed var(--p-clr);
+    padding-block: 7rem;
+    padding-inline: clamp(2rem, 7vw, 7rem);
+    margin-block: 3rem;
+    text-align: center;
+    width: 85%;
+    margin-inline: auto;
+    border-radius: var(--card-corner);
+    -webkit-border-radius: var(--card-corner);
+    -moz-border-radius: var(--card-corner);
+    -ms-border-radius: var(--card-corner);
+    -o-border-radius: var(--card-corner);
+}
+.project-contact > * {
+    margin-block: 1.2rem;
+}
+.project-contact .btn {
+    margin-top: 3rem;
+}

@@ -404,7 +404,7 @@ nav ul li {
 /* Start main */
 
 main {
-    padding-block: calc(var(--header-height) + 11rem);
+    padding-block: var(--header-height);
     padding-inline: clamp(1rem, 7vw, 9rem);
     display: grid;
     gap: 2rem;
