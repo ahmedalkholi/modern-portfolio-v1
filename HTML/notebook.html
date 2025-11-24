@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoteBook</title>
+    <link rel="stylesheet" href="../CSS/home.css">
+    <link rel="stylesheet" href="../CSS/notebook.css">
+
+    <script>
+        (function() {
+            const THEME_KEY = 'site-theme';
+            let savedTheme = localStorage.getItem(THEME_KEY)
+            if (savedTheme === 'true'){
+                document.documentElement.classList.add('light');
+            }
+        })();
+    </script>
+</head>
+<body>
+    <div class="background-glow">
+        <div class="background-glow__top"></div>
+        <div class="background-glow__bottom"></div>
+    </div>
+    <div class="logo-container-phone">
+        <div class="logo"></div>
+    </div>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <div class="logo"></div>
+            </div>
+            <ul class="header-nav__text">
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#work">Work</a>
+                </li>
+                <li>
+                    <a href="#notebook">Notebook</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+                <li class="header-nav__itme--more">
+                    More
+                    <i class="ri-arrow-down-s-line"></i>
+                </li>
+            </ul>
+            <ul class="header-nav__icon">
+                <li>
+                    <a href="#home">
+                        <i class="ri-home-3-line"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#aboutme">
+                        <i class="ri-user-line"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#work">
+                        <i class="ri-suitcase-line"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#notebook">
+                        <i class="ri-pencil-line"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact">
+                        <i class="ri-mail-line"></i>
+                    </a>
+                </li>
+                <li class="header-nav__itme--more">
+                    <i class="ri-menu-3-line"></i>
+                </li>
+            </ul>
+            <div class="more-slide">
+                <ul>
+                    <li>
+                        <a href="bookshelf">Bookshelf</a>
+                    </li>
+                    <li>
+                        <a href="techStack">Tech Stack</a>
+                    </li>
+                    <li>
+                        <a href="thisuikit">This UI Kit</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="header-icons">
+            <ul class="header-icons__social">
+                <li>
+                    <a href="#">
+                        <div id="github"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div id="linkedin"></div>
+                    </a>
+                </li>
+            </ul>
+            <div class="theme-toggle">
+                <div id="sun"></div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <footer>
+        <section class="footer-id">
+            <div class="footer-id__top">
+                <div class="footer-logo"></div>
+                <p>Thanks for stopping by ッ</p>
+            </div>
+            <div class="footer-id__bottom">
+                © 2023 Eihab Khan. All Rights Reserved.
+            </div>
+        </section>
+        <section class="footer-links">
+            <ul>
+                <h2>Links</h2>
+                <li>
+                    <a href="about">About</a>
+                </li>
+                <li>
+                    <a href="work">Work</a>
+                </li>
+                <li>
+                    <a href="techstack">Tech Stack</a>
+                </li>
+                <li>
+                    <a href="contact">Contact</a>
+                </li>
+            </ul>
+            <ul>
+                <h2>Elsewhere</h2>
+                <li>
+                    <a href="email">Email</a>
+                </li>
+                <li>
+                    <a href="www.linkedin.com">LinkedIn</a>
+                </li>
+                <li>
+                    <a href="www.github.com">GitHub</a>
+                </li>
+                <li>
+                    <a href="www.twitter.com">Twitter</a>
+                </li>
+                <li>
+                    <a href="www.discord.com">Discord</a>
+                </li>
+            </ul>
+        </section>
+    </footer>
+    <script src="../script.js"></script>
+</body>
+</html>

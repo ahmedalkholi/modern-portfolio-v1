@@ -9,6 +9,16 @@
     <link rel="stylesheet" href="../fonts/remixicon.css">
     <link rel="stylesheet" href="../CSS/home.css">
     <link rel="stylesheet" href="../CSS/projectspage.css">
+
+    <script>
+        (function() {
+            const THEME_KEY = 'site-theme';
+            let savedTheme = localStorage.getItem(THEME_KEY)
+            if (savedTheme === 'true'){
+                document.documentElement.classList.add('light');
+            }
+        })();
+    </script>
 </head>
 <body>
     <div class="background-glow">
