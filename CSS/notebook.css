@@ -1,0 +1,20 @@
+.notebook {
+    padding-top: 7rem;
+}
+.notebook-container {
+    margin-top: 5rem;
+}
+.notebook_card {
+    margin-block: 3rem;
+}
+.notebook_card h2 {
+    margin-bottom: 1.2rem;
+    color: var(--footer-p-clr);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.notebook_card h2 span {
+    font-size: 1rem;
+    font-weight: normal;
+}
