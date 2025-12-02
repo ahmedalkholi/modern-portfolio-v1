@@ -1,0 +1,33 @@
+.guide {
+    padding-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.giude-head h1 {
+    margin-bottom: .7rem;
+}
+.guide-content {
+    width: 500px;
+    max-width: 100%;
+    margin-block: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+picture {
+    padding-bottom: 3rem;
+    display: block;
+
+}
+.guide-content :where(p, li, ol) {
+    color: var(--main-text-clr);
+    line-height: 1.7rem;
+}
+.guide-content ol {
+    margin-block: 3rem;
+    padding-left: 1rem;
+}
+.guide-content li {
+    margin-block: 1rem;
+}

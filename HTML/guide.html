@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NoteBook</title>
-    <link rel="icon" href="../Images/icons/small light.webp"  style="aspect-ratio: 1;">
+    <title>Giude</title>
+    <link rel="icon" href="../Images/icons/small light.webp" style="aspect-ratio: 1">
 
     <link rel="stylesheet" href="../fonts/remixicon.css">
-    
+
     <link rel="stylesheet" href="../CSS/home.css">
-    <link rel="stylesheet" href="../CSS/notebookPage.css">
+    <link rel="stylesheet" href="../CSS/guidePage.css">
 
     <script>
         (function() {
@@ -115,26 +115,43 @@
         </div>
     </header>
 
-    <section class="notebook">
-        <h1>Notebook</h1>
-        <p>My thoughts, insights and reflections</p>
-        <section class="notebook-container">
-            <section class="notebook_card">
-                <h2>Dev <span>1 note</span></h2>
-                <picture>
-                    <source srcset="../Images/Note1.webp">
-                    <img src="../Images/Note1.png" alt="first image of notebook">
-                </picture>
-            </section>
-            <section class="notebook_card">
-                <h2>Design <span>1 note</span></h2>
-                <picture>
-                    <source srcset="../Images/Note2.webp">
-                    <img src="../Images/Note2.png" alt="second image of notebook">
-                </picture>
-            </section>
+    <section class="guide">
+        <section class="giude-head">
+            <h1>Ultimate guide to the App Router in Next.js 13</h1>
+            <p>17th Jul 2023 –– 7 min read</p>
+        </section>
+        
+        <section class="guide-content">
+            <picture>
+                <source srcset="../Images/Note1.webp">
+                <img src="../Images/Note1.png" alt="picture of note 1">
+            </picture>
+            <p>
+                The App Router in Next.js is responsible for handling client-side routing within your application. It provides a declarative and intuitive way to define routes, handle navigation, and manage dynamic URLs. Here are some key features of the Next.js App Router:
+            </p>
+            <ol>
+                <li>
+                    File-based Routing: Next.js uses a file-based routing system, where each page of your application is represented by a file in the "pages" directory. The name of the file determines the corresponding URL path. For example, a file named "about.js" in the "pages" directory will be accessible at the "/about" URL path.
+                </li>
+                <li>
+                    Dynamic Routes: Next.js allows you to create dynamic routes by using brackets ([ ]) in the file name or directory structure. For example, a file named "[id].js" can match routes like "/posts/1" or "/users/john". The dynamic segments are accessible as parameters in the page component and can be used to fetch data or customize the content.
+                </li>
+                <li>
+                    Link Component: Next.js provides the <Link> component, which enables client-side navigation between pages. It ensures that the page transition is handled gracefully, without full page reloads. You can use the <Link> component to create anchor tags (<a>) with client-side routing behavior.
+                </li>
+                <li>
+                    Programmatic Navigation: Next.js also offers programmatic navigation through the useRouter hook. It allows you to access the router object, which provides methods like push(), replace(), and back() to navigate programmatically within your application.
+                </li>
+                <li>
+                    Code Splitting: Next.js automatically performs code splitting, which means that only the JavaScript and CSS needed for the current page are loaded. This helps optimize the initial page load time and improves performance.
+                </li>
+            </ol>
+            <p>
+                These are some of the fundamental features and concepts of the App Router in Next.js. However, it's important to note that newer versions of Next.js may introduce additional enhancements or changes to the App Router. To stay updated on the latest features and changes, I recommend referring to the official Next.js documentation or the Next.js GitHub repository.
+            </p>
         </section>
     </section>
+
 
     <footer>
         <section class="footer-id">
