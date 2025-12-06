@@ -1,0 +1,33 @@
+.techStack {
+    padding-top: 7rem;
+}
+.techStack-head {
+    margin-bottom: 3rem;
+}
+.cards-container {
+    padding-top: 1.2rem;
+}
+.card {
+    padding: 2rem;
+    max-width: 100%;
+    width: 300px;
+    background-color: var(--card-clr);
+    text-align: center;
+}
+.card div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.2rem;
+}
+.card div span {
+    background-color: var(--dark-white);
+    color: var(--link-clr);
+    border-radius: var(--card-corner);
+    -webkit-border-radius: var(--card-corner);
+    -moz-border-radius: var(--card-corner);
+    -ms-border-radius: var(--card-corner);
+    -o-border-radius: var(--card-corner);
+    font-size: .7rem;
+    padding: .4rem .7rem;
+}

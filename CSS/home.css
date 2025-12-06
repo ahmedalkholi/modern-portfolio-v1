@@ -35,6 +35,8 @@
 
     --onyx-clr: #181818;
 
+    --dark-white: rgba(0, 0, 0, 70%);
+
     /* Border Radius */
     --btn-corner: 9px;
     --header-corner: 16px;
@@ -100,6 +102,9 @@ html.light {
     --second-shape: #e4e4e4;
     --last-shape: #d5cfcf;
     
+
+    --dark-white: rgba(255, 255, 255, 70%);
+
     /* Icons */
     --Sun: url("../Images/icons/light\ Sun.webp");
     --Github: url("../Images/icons/light\ Github.webp");
