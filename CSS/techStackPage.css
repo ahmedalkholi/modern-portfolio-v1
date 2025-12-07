@@ -6,13 +6,33 @@
 }
 .cards-container {
     padding-top: 1.2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+@media(max-width: 768px) {
+    .cards-container {
+        display: block;
+    }
 }
 .card {
     padding: 2rem;
     max-width: 100%;
-    width: 300px;
     background-color: var(--card-clr);
     text-align: center;
+    border-radius: var(--card-corner)0;
+    -webkit-border-radius: var(--card-corner)0;
+    -moz-border-radius: var(--card-corner)0;
+    -ms-border-radius: var(--card-corner)0;
+    -o-border-radius: var(--card-corner)0;
+}
+.card picture {
+    display: inline-block;
+    width: 100px;
+    height: auto;
+}
+.card picture :where(source, img) {
+    width: 100%;
 }
 .card div {
     display: flex;
