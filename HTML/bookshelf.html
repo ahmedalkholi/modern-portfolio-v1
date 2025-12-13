@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Shelf</title>
+    <link rel="icon" href="../Images/icons/small light.webp" style="aspect-ratio: 1">
+
+    <link rel="stylesheet" href="../fonts/remixicon.css">
+
+    <link rel="stylesheet" href="../CSS/home.css">
+    <link rel="stylesheet" href="../CSS/bookshelfPage.css">
+
+    <script>
+        (function() {
+            const THEME_KEY = 'site-theme';
+            let savedTheme = localStorage.getItem(THEME_KEY)
+            if (savedTheme === 'true'){
+                document.documentElement.classList.add('light');
+            }
+        })();
+    </script>
+</head>
+<body>
+    <div class="background-glow">
+        <div class="background-glow__top"></div>
+        <div class="background-glow__bottom"></div>
+    </div>
+    <div class="logo-container-phone">
+        <div class="logo"></div>
+    </div>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <div class="logo"></div>
+            </div>
+            <ul class="header-nav__text">
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#work">Work</a>
+                </li>
+                <li>
+                    <a href="#notebook">Notebook</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+                <li class="header-nav__itme--more">
+                    More
+                    <i class="ri-arrow-down-s-line"></i>
+                </li>
+            </ul>
+            <ul class="header-nav__icon">
+                <li>
+                    <a href="#home">
+                        <i class="ri-home-3-line"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#aboutme">
+                        <i class="ri-user-line"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#work">
+                        <i class="ri-suitcase-line"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#notebook">
+                        <i class="ri-pencil-line"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact">
+                        <i class="ri-mail-line"></i>
+                    </a>
+                </li>
+                <li class="header-nav__itme--more">
+                    <i class="ri-menu-3-line"></i>
+                </li>
+            </ul>
+            <div class="more-slide">
+                <ul>
+                    <li>
+                        <a href="bookshelf">Bookshelf</a>
+                    </li>
+                    <li>
+                        <a href="techStack">Tech Stack</a>
+                    </li>
+                    <li>
+                        <a href="thisuikit">This UI Kit</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="header-icons">
+            <ul class="header-icons__social">
+                <li>
+                    <a href="#">
+                        <div id="github"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div id="linkedin"></div>
+                    </a>
+                </li>
+            </ul>
+            <div class="theme-toggle">
+                <div id="sun"></div>
+            </div>
+        </div>
+    </header>
+
+    <section class="bookShelf">
+        <section class="bookShelf-head">
+            <h1>Bookshelf</h1>
+            <p>Books and pieces of wisdom I’ve enjoyed reading.</p>
+        </section>
+        <section class="bookShelf-container">
+            <picture>
+                <source srcset="../Images/bookshelf/naval-almanack.webp">
+                <img src="../Images/bookshelf/naval-almanack.png" alt="Photo of naval-almanack">
+            </picture>
+            <picture>
+                <source srcset="../Images/bookshelf/meditations.webp">
+                <img src="../Images/bookshelf/meditations.png" alt="Photo of meditations">
+            </picture>
+            <picture>
+                <source srcset="../Images/bookshelf/mans-search-for-meaning.webp">
+                <img src="../Images/bookshelf/mans-search-for-meaning.png" alt="Photo of mans-search-for-meaning">
+            </picture>
+            <picture>
+                <source srcset="../Images/bookshelf/sapiens.webp">
+                <img src="../Images/bookshelf/sapiens.png" alt="Photo of sapiens">
+            </picture>
+            <picture>
+                <source srcset="../Images/bookshelf/pragmatic-programmer.webp">
+                <img src="../Images/bookshelf/pragmatic-programmer.png" alt="Photo of the pragmatic programmer">
+            </picture>
+            <picture>
+                <source srcset="../Images/bookshelf/grokking-algorithms.webp">
+                <img src="../Images/bookshelf/grokking-algorithms.png" alt="Photo of grokking-algorithms">
+            </picture>
+            <picture>
+                <source srcset="../Images/bookshelf/js-definitive-guide.webp">
+                <img src="../Images/bookshelf/js-definitive-guide.png" alt="Photo of js-definitive-guide">
+            </picture>
+            <picture>
+                <source srcset="../Images/bookshelf/rework.webp">
+                <img src="../Images/bookshelf/rework.png" alt="Photo of REWORK">
+            </picture>
+            <picture>
+                <source srcset="../Images/bookshelf/principles.webp">
+                <img src="../Images/bookshelf/principles.png" alt="Photo of principles">
+            </picture>
+            <picture>
+                <source srcset="../Images/bookshelf/make-something-wonderful.webp">
+                <img src="../Images/bookshelf/make-something-wonderful.png" alt="Photo of make-something-wonderful">
+            </picture>
+            <picture>
+                <source srcset="../Images/bookshelf/deep-work.webp">
+                <img src="../Images/bookshelf/deep-work.png" alt="Photo of deep-work">
+            </picture>
+            <picture>
+                <source srcset="../Images/bookshelf/stop-worrying.webp">
+                <img src="../Images/bookshelf/stop-worrying.png" alt="Photo of Stop Worrying">
+            </picture>
+            <picture>
+                <source srcset="../Images/bookshelf/snow-crash.webp">
+                <img src="../Images/bookshelf/snow-crash.png" alt="Photo of Snow Crash">
+            </picture>
+            <picture>
+                <source srcset="../Images/bookshelf/ready-player-one.webp">
+                <img src="../Images/bookshelf/ready-player-one.png" alt="Photo of Ready Player One">
+            </picture>
+            <picture>
+                <source srcset="../Images/bookshelf/obstacle-is-the-way.webp">
+                <img src="../Images/bookshelf/obstacle-is-the-way.png" alt="Photo of obstacle-is-the-way">
+            </picture>
+            <picture>
+                <source srcset="../Images/bookshelf/ego-is-the-enemy.webp">
+                <img src="../Images/bookshelf/ego-is-the-enemy.png" alt="Photo of ego-is-the-enemy">
+            </picture>
+            <picture>
+                <source srcset="../Images/bookshelf/build.webp">
+                <img src="../Images/bookshelf/build.png" alt="Photo of build">
+            </picture>
+            <picture>
+                <source srcset="../Images/bookshelf/thinking-fast-slow.webp">
+                <img src="../Images/bookshelf/thinking-fast-slow.png" alt="Photo of thinking-fast-slow">
+            </picture>
+            <picture>
+                <source srcset="../Images/bookshelf/hail-mary.webp">
+                <img src="../Images/bookshelf/hail-mary.png" alt="Photo of hail-mary">
+            </picture>
+            <picture>
+                <source srcset="../Images/bookshelf/refactoring-ui.webp">
+                <img src="../Images/bookshelf/refactoring-ui.png" alt="Photo of refactoring-ui">
+            </picture>
+            <picture>
+                <source srcset="../Images/bookshelf/hp-sorcerers-stone.webp">
+                <img src="../Images/bookshelf/hp-sorcerers-stone.png" alt="Photo of hp-sorcerers-stone">
+            </picture>
+            <picture>
+                <source srcset="../Images/bookshelf/atomic-design.webp">
+                <img src="../Images/bookshelf/atomic-design.png" alt="Photo of atomic-design">
+            </picture>
+            <picture>
+                <source srcset="../Images/bookshelf/war-of-art.webp">
+                <img src="../Images/bookshelf/war-of-art.png" alt="Photo of war-of-art">
+            </picture>
+            <picture>
+                <source srcset="../Images/bookshelf/atomic-habits.webp">
+                <img src="../Images/bookshelf/atomic-habits.png" alt="Photo of atomic-habits">
+            </picture>
+            <picture>
+                <source srcset="../Images/bookshelf/steal-like-an-artist.webp">
+                <img src="../Images/bookshelf/steal-like-an-artist.png" alt="Photo of steal-like-an-artist">
+            </picture>
+            <picture>
+                <source srcset="../Images/bookshelf/animal-farm.webp">
+                <img src="../Images/bookshelf/animal-farm.png" alt="Photo of animal-farm">
+            </picture>
+            <picture>
+                <source srcset="../Images/bookshelf/show-your-work.webp">
+                <img src="../Images/bookshelf/show-your-work.png" alt="Photo of show-your-work">
+            </picture>
+            <picture>
+                <source srcset="../Images/bookshelf/1984.webp">
+                <img src="../Images/bookshelf/1984.png" alt="Photo of 1984">
+            </picture>
+        </section>
+    </section>
+
+    <footer>
+        <section class="footer-id">
+            <div class="footer-id__top">
+                <div class="footer-logo"></div>
+                <p>Thanks for stopping by ッ</p>
+            </div>
+            <div class="footer-id__bottom">
+                © 2023 Eihab Khan. All Rights Reserved.
+            </div>
+        </section>
+        <section class="footer-links">
+            <ul>
+                <h2>Links</h2>
+                <li>
+                    <a href="about">About</a>
+                </li>
+                <li>
+                    <a href="work">Work</a>
+                </li>
+                <li>
+                    <a href="techstack">Tech Stack</a>
+                </li>
+                <li>
+                    <a href="contact">Contact</a>
+                </li>
+            </ul>
+            <ul>
+                <h2>Elsewhere</h2>
+                <li>
+                    <a href="email">Email</a>
+                </li>
+                <li>
+                    <a href="www.linkedin.com">LinkedIn</a>
+                </li>
+                <li>
+                    <a href="www.github.com">GitHub</a>
+                </li>
+                <li>
+                    <a href="www.twitter.com">Twitter</a>
+                </li>
+                <li>
+                    <a href="www.discord.com">Discord</a>
+                </li>
+            </ul>
+        </section>
+    </footer>
+    <script src="../script.js"></script>
+</body>
+</html>

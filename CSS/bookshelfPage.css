@@ -1,0 +1,16 @@
+.bookShelf {
+    padding-top: 10rem;
+}
+.bookShelf-head {
+    margin-bottom: 3rem;
+}
+.bookShelf-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+@media(max-width: 678px) {
+    .bookShelf-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
