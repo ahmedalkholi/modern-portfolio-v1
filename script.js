@@ -72,3 +72,10 @@ window.addEventListener('click', (e) =>
         moreSlide.classList.remove('active');
     }
 })
+// ..............................................................
+const form = document.querySelector('form')
+
+form.addEventListener('submit', e =>
+{
+    e.preventDefault()
+})
